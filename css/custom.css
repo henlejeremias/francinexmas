@@ -151,6 +151,7 @@ body {
     font-family: 'Inter';
 }
 
+
 .bg-image-1 {
     background: url('../img/header-new-1.webp');
     background-size: cover;
@@ -159,6 +160,10 @@ body {
 
 .nav-link {
     color: #f2f2f2 !important;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8),
+                 0 0 10px rgba(0, 0, 0, 0.5),
+                 0 0 15px rgba(0, 0, 0, 0.3),
+                 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .text-shadow {
@@ -184,16 +189,60 @@ body {
 /* ---------- Begin Jere */
 
 .modal {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4)
 }
 
 .modal-content {
     background-color: black;
 }
 
-.btn-close {
-            color: white;
+.modal-content hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
 }
+
+header {
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66vh;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) { /* for small and medium devices */
+  video {
+    height: 50vh;
+  }
+}
+
+main {
+  margin-top: 66vh; /* for large devices */
+}
+
+@media only screen and (max-width: 768px) { /* for small and medium devices */
+  main {
+    margin-top: 50vh;
+  }
+}
+
+nav {
+  position: absolute; /* Set the position of the navbar to absolute */
+  top: 0; /* Set the top of the navbar to the top of the viewport */
+  left: 0; /* Set the left of the navbar to the left of the viewport */
+  width: 100%; /* Set the width of the navbar to 100% */
+  z-index: 1; /* Set the z-index to a positive value to position the navbar in front of the video */
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
 
 /* ---------- End Jere  */
 

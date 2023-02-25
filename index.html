@@ -20,51 +20,25 @@
       background-color: black;
       color: #f2f2f2;
     }
+    .link {
+      text-decoration: none;
+      color: #f2f2f2;
+      margin-right: 30px;
+    }
+    .link img {
+      margin-right: 5px;
+    }
   </style>
 </head>
 
 
-<body>
-
-  <script>
-    window.onload = function () {
-      // get the div container
-      var div = document.getElementById('myDiv');
-
-      // set the initial background image
-      div.style.backgroundImage = 'url(img/header-new-1.webp)';
-
-      // create an array of image URLs
-      var images = ['img/header-new-1.webp', 'img/header-new-2.webp', 'img/header-new.webp'];
-
-      // set the initial index to 0
-      var index = 0;
-
-      // function to rotate the background image
-      function rotateImage() {
-        // update the index and wrap around if necessary
-        index = (index + 1) % images.length;
-
-        // update the background image
-        div.style.backgroundImage = 'url(' + images[index] + ')';
-      }
-
-      // set a 1-second transition time for the fade effect
-      div.style.transition = 'background-image 1s';
-      div.style.webkitTransition = 'background-image 1s';
-      div.style.mozTransition = 'background-image 1s';
-
-      // run the function every X seconds
-      setInterval(rotateImage, 5000);
-    };
-  </script>
-
+<header>
   <!-- NAVBAR -->
   <div class="container">
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid d-flex align-items-center">
-        <a class="navbar-brand" href="#">
-          <img src="img/fahrrad-werkstatt.png" alt="Fahrrad Werkstatt" height="18px">
+        <a class="navbar-brand">
+          <img src="img/logo-team.png" alt="Logo WILIER-CHAOYANG" width="70px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,6 +58,14 @@
   </div>
 
 
+  <video autoplay playsinline loop muted>
+    <source src="img/headermovie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!--
+  <img src="img/slider10.webp" alt="Head Image" class="video-image">
+  -->
+
 
         <!-- MODAL Impressum -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,7 +73,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Impressum</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
@@ -124,7 +106,7 @@
                 </p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
               </div>
             </div>
           </div>
@@ -138,7 +120,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel2">Datenschutzerkl&auml;rung</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung
@@ -246,7 +228,7 @@
 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
               </div>
             </div>
           </div>
@@ -257,38 +239,22 @@
     </nav>
   </div>
 
+</header>
 
-  <div class="container rounded border bg-image-1" id="myDiv">
-    <div class="row text-center height-600 align-items-center">
-      <div class="col-12 col-md-4">
-        <h1 class="fw-bold display-4"><img src="img/logo-team.png" alt="" class="img-fluid rounded"></h1>
-      </div>
-      <div class="col-12 col-md-8">
-        <h1 class="fw-bold display-4">WILIER-CHAOYANG</h1>
-        <p class="fw-bold">Herzlich Willkommen beim Mountainbike Rennsportteam WILIER-CHAOYANG</p>
-      </div>
-      <div class="col-12">
-        <a href="#about" type="button" class="btn btn-dark mt-5">Mehr erfahren <i
-            class="fa-solid fa-chevron-down"></i></a>
-      </div>
-    </div>
-  </div>
+<main>
 
-  <div class="container my-5" id="about">
+  <div class="container my-5" id="about-not">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <h1 class="fw-bold">&Uuml;ber uns</h1>
+        <h1 class="fw-bold">Team WILIER-CHAOYANG</h1>
       </div>
       <div class="col-md-9 col-12 mt-3 text-center">
         <p>
-          Hier kann Text herkommen.
-        <p>
-          In diese Zeile auch.
+          Herzlich Willkommen beim Mountainbike-Rennsportteam WILIER-CHAOYANG. Aktuelle Informationen, Renntermine, Ergebnisse und Bilder finden Sie stets auf unseren Social-Media-Kan&auml;len.
         </p>
       </div>
     </div>
   </div>
-
 
   <div class="container my-5" id="bikeshop">
     <div class="row">
@@ -299,19 +265,42 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Die Bikes</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <h3>Wilier Urta</h3>
-                <p>Das ist das Fully<br />
-                  Es hat diese Ausstattung</p>
-
-                <h3>Wilier Usma</h3>
-                <p>Dies ist das Hardtail<br />
-                  Und es hat jene Ausstattung</a></p>
+                <h4>Wilier Urta</h4>
+                <p class="text-muted">Fully</p>
+                <img src="img/urta1.webp" alt="" class="img-fluid rounded"><br><br>
+                <p><strong>Federgabel: </strong>Fox 32 SC Factory, 100mm</p>
+                <p><strong>Dämpfer: </strong>Fox Float DPS Factory</p>
+                <p><strong>Schaltgruppe: </strong>SRAM XX1 Eagle</p>
+                <p><strong>Bremsen: </strong>Shimano XT M8100</p>
+                <p><strong>Lenker, Vorbau: </strong>Wilier Urta Bar</p>
+                <p><strong>Laufradsatz: </strong>Miche K4 Carbon</p>
+                <p><strong>Reifen vorne: </strong>Chaoyang Phantom Wet 120TPI oder Chaoyang Phantom Dry 120TPI</p>
+                <p><strong>Reifen hinten: </strong>Chaoyang Phantom Dry 120TPI oder Chaoyang Phantom Speed 120TPI</p>
+                <p><strong>Griffe: </strong>Force</p>
+                <p><strong>Sattelstütze, Sattel: </strong>individuell</p>
+                <p><strong>Pedale: </strong>individuell</p>
+                <p><strong>Gewicht: </strong>9,6kg</p>
+                <hr>
+                <h4>Wilier Usma</h4>
+                <p class="text-muted">Hardtail</p>
+                <img src="img/usma1.webp" alt="" class="img-fluid rounded"><br><br>
+                <p><strong>Federgabel: </strong>Fox 32 SC Factory, 100mm</p>
+                <p><strong>Schaltgruppe: </strong>SRAM XX1 Eagle</p>
+                <p><strong>Bremsen: </strong>Shimano XT M8100</p>
+                <p><strong>Lenker, Vorbau: </strong>Wilier Urta Bar</p>
+                <p><strong>Laufradsatz: </strong>Miche K4 Carbon</p>
+                <p><strong>Reifen vorne: </strong>Chaoyang Phantom Wet 120TPI oder Chaoyang Phantom Dry 120TPI</p>
+                <p><strong>Reifen hinten: </strong>Chaoyang Phantom Dry 120TPI oder Chaoyang Phantom Speed 120TPI</p>
+                <p><strong>Griffe: </strong>Force</p>
+                <p><strong>Sattelstütze, Sattel: </strong>individuell</p>
+                <p><strong>Pedale: </strong>individuell</p>
+                <p><strong>Gewicht: </strong>9,0kg</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
               </div>
             </div>
           </div>
@@ -320,23 +309,23 @@
 
       <div class="col-12 col-md-4 py-3 position-relative zoom">
         <p>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fahrrad_werkstatt_hilpoltstein/?hl=de" class="stretched-link">
-            <img src="img/mockup-test.webp" alt="" class="img-fluid rounded filter-gray">          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/wilierchaoyang/" class="stretched-link">
+            <img src="img/mockup-insta.webp" alt="" class="img-fluid rounded filter-gray">          </a>
         </p>
         <h5 class="fw-bold">Instagram</h5>
-        <p class="text-muted">Die aktuellsten Bilder und News immer auf Instagram.</p>
+        <p class="text-muted">Die aktuellsten Bilder, News und Ergebnisse immer auf Instagram.</p>
       </div>
       <div class="col-12 col-md-4 py-3 position-relative zoom">
         <p>
-          <a target="_blank" rel="noopener noreferrer" href="https://de-de.facebook.com/people/Fahrrad-Werkstatt/100057090654223/" class="stretched-link">
-            <img src="img/mockup-test.webp" alt="" class="img-fluid rounded"></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/wilierchaoyang" class="stretched-link">
+            <img src="img/mockup-facebook.webp" alt="" class="img-fluid rounded"></a>
         </p>
         <h5 class="fw-bold">Facebook</h5>
         <p class="text-muted">Unsere Facebook-Seite mit Neuigkeiten und vielem mehr.</p>
       </div>
       <div class="col-12 col-md-4 py-3 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/mockup-test.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/bikes.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Die Bikes</h5>
@@ -438,7 +427,7 @@
       
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/hochenwarter.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalHochenwarter"> <img src="img/hochenwarter.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Uwe Hochenwarter</h5>
@@ -447,7 +436,7 @@
       
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/stier.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalStier"> <img src="img/stier.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Felix Stier</h5>
@@ -456,7 +445,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/maegdefessel.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalMaegdefessel"> <img src="img/maegdefessel.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Sven M&auml;gdefessel</h5>
@@ -465,7 +454,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/acs.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalAcs"> <img src="img/acs.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Igor Acs</h5>
@@ -474,7 +463,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/weismantel.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalWeismantel"> <img src="img/weismantel.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Tim Weismantel</h5>
@@ -483,7 +472,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/metschberger.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalMetschberger"> <img src="img/metschberger.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Markus Metschberger</h5>
@@ -492,7 +481,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/pechacek.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalPechacek"> <img src="img/pechacek.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Luca Pechacek</h5>
@@ -501,7 +490,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/schroedl.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalSchroedl"> <img src="img/schroedl.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Andreas Schr&ouml;dl</h5>
@@ -510,7 +499,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/spahn.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalSpahn"> <img src="img/spahn.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Hannes Spahn</h5>
@@ -519,7 +508,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/riedl.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalRiedl"> <img src="img/riedl.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Tobias Riedl</h5>
@@ -528,7 +517,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/fehr.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalFehr"> <img src="img/fehr.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Max Fehr</h5>
@@ -537,7 +526,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/ullmann.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalUllmann"> <img src="img/ullmann.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Tobias Ullmann</h5>
@@ -546,7 +535,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/felleiter.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalFelleiter"> <img src="img/felleiter.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Wolfgang Felleiter</h5>
@@ -555,7 +544,7 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/koenig.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalKoenig"> <img src="img/koenig.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Herbert K&ouml;nig</h5>
@@ -564,13 +553,678 @@
 
       <div class="col-6 col-md-3 py-4 position-relative zoom">
         <p>
-          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#diebikes"> <img src="img/spiegel.webp" alt="" class="img-fluid rounded"> </a>
+          <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalSpiegel"> <img src="img/spiegel.webp" alt="" class="img-fluid rounded"> </a>
           </a>
         </p>
         <h5 class="fw-bold">Walter Spiegel</h5>
         <p class="text-muted">Betreuer</p>
       </div>
 
+
+        <!-- MODAL Hochenwarter -->
+        <div class="modal fade" id="modalHochenwarter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Uwe Hochenwarter</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/hochenwarter.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/uwehochenwarter/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <a href="https://facebook.com/uwe.hochenwarter/" target="_blank" class="link">
+                  <img src="img/fb.webp" alt="Facebook Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Facebook</span>
+                <a href="https://www.uwehochenwarter.com/" target="_blank" class="link">
+                  <img src="img/web.png" alt="Website Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Website</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>36, gelernter Tischler, MTB Ex-Profi, Soldat</p>
+                <p><strong>Wohnort:</strong> Villach / Kärnten (Österreich)</p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li><span dir="ltr" role="presentation">12 Jahre Mountainbike XCO und Marathon Profi mit Weltcup, EM und WM Erfahrung</span></li>
+                <li><span dir="ltr" role="presentation">2x Österreichischer Meister Hillclimb</span></li>
+                <li><span dir="ltr" role="presentation">Sieger der Alpentour Steiermark und des Kitzalp Bike</span></li>
+                <li><span dir="ltr" role="presentation">Mehrere Top 10 Ergebnisse bei internationalen hochkarätigen Marathons</span></li>
+                <li>4. Sella Ronda Hero</li>
+                </ul>
+                <p><strong>Erfolge Overall (2022): </strong></p>
+                <ul>
+                <li><span dir="ltr" role="presentation">Österreichischer Meister Hillclimb</span></li>
+                <li><span dir="ltr" role="presentation">Österreichischer Heeresmeister Berglauf</span></li>
+                <li><span dir="ltr" role="presentation">1.Pl Master Kamptal Trophy Langenlois XCO</span></li>
+                <li><span dir="ltr" role="presentation">1.Pl Master Mythos Primiero Dolomiti</span></li>
+                <li><span dir="ltr" role="presentation">1.Pl Master Kronplatz King</span></li>
+                <li><span dir="ltr" role="presentation">1.Pl Raid des Hautes-Fagnes Marathon Belgien medium Distanz</span></li>
+                <li><span dir="ltr" role="presentation">2.Pl Top Six Stubalpen Marathon</span></li>
+                <li><span dir="ltr" role="presentation">2.Pl Top Six Wipfeltrophy Marathon</span></li>
+                <li><span dir="ltr" role="presentation">2.Pl Hillclimb Afritz</span></li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">Internationale Top Erfolge in der Master Kategorie und natürlich weiterhin Spaß am biken haben, sowie das </span><span dir="ltr" role="presentation">Team &#8222;WILIER-CHAOYANG&#8220; bestmöglich nach außen transportieren.</span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Hochenwarter Ende -->
+
+
+        <!-- MODAL Stier -->
+        <div class="modal fade" id="modalStier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Felix Stier</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/stier.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/stier_f/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>30, Feuerwehrmann</p>
+                <p><strong>Wohnort: </strong>Hilpoltstein</p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li><span id="page1R_mcid5" class="markedContent"><span id="page1R_mcid6" class="markedContent"><span id="page1R_mcid8" class="markedContent"><span dir="ltr" role="presentation">1. 12h Rennen Schnaittach Mixed</span></span></span></span></li>
+                <li><span id="page1R_mcid5" class="markedContent"><span id="page1R_mcid9" class="markedContent"><span id="page1R_mcid11" class="markedContent"><span dir="ltr" role="presentation">1. Salzkammergut Trophy E Strecke Team, Overall<br /></span></span></span></span></li>
+                <li><span id="page1R_mcid5" class="markedContent"><span id="page1R_mcid12" class="markedContent"><span id="page1R_mcid14" class="markedContent"><span dir="ltr" role="presentation">1. Challenge Roth Mixed Staffel (Radfahrer)</span></span></span></span></li>
+                <li><span id="page1R_mcid5" class="markedContent"><span id="page1R_mcid15" class="markedContent"><span id="page1R_mcid17" class="markedContent"><span dir="ltr" role="presentation">2. Güntersleben Marathon Mitteldistanz, Overall<br /></span></span></span></span></li>
+                <li><span id="page1R_mcid5" class="markedContent"><span id="page1R_mcid18" class="markedContent"><span id="page1R_mcid20" class="markedContent"><span dir="ltr" role="presentation">4. Kitzalp Bike Marathon Medium, Overall<br /></span></span></span></span></li>
+                <li>2. Güntersleben Marathon Mitteldistanz, Overall</li>
+                <li><span id="page1R_mcid21" class="markedContent"><span id="page1R_mcid22" class="markedContent"><span id="page1R_mcid24" class="markedContent"><span dir="ltr" role="presentation">5. Salzkammergut Trophy E-Strecke, Overall</span></span></span></span></li>
+                <li><span id="page1R_mcid21" class="markedContent"><span id="page1R_mcid25" class="markedContent"><span id="page1R_mcid27" class="markedContent"><span dir="ltr" role="presentation">6. Deutschlandtour Jedermann (Nürnberg)</span></span></span></span></li>
+                <li><span id="page1R_mcid21" class="markedContent"><span id="page1R_mcid28" class="markedContent"><span id="page1R_mcid30" class="markedContent"><span dir="ltr" role="presentation">9. Güntersleben Marathon Langdistanz, Overall<br /></span></span></span></span></li>
+                <li><span id="page1R_mcid21" class="markedContent"><span id="page1R_mcid31" class="markedContent"><span id="page1R_mcid33" class="markedContent"><span dir="ltr" role="presentation">10. Bikefestival Ronda Picola</span></span></span></span>, Overall</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022): </strong></p>
+                <ul>
+                <li><span id="page1R_mcid39" class="markedContent"><span id="page1R_mcid40" class="markedContent"><span id="page1R_mcid42" class="markedContent"><span dir="ltr" role="presentation">1. Salzkammergut Trophy E Team</span></span></span></span></li>
+                <li><span id="page1R_mcid39" class="markedContent"><span id="page1R_mcid43" class="markedContent"><span id="page1R_mcid45" class="markedContent"><span dir="ltr" role="presentation">4. Kitzalp Bike Marathon Medium</span></span></span></span></li>
+                <li><span id="page1R_mcid46" class="markedContent"><span id="page1R_mcid53" class="markedContent"><span id="page1R_mcid55" class="markedContent"><span dir="ltr" role="presentation">4. Abendrennen Würzburg</span></span></span></span></li>
+                <li><span id="page1R_mcid35" class="markedContent"><span id="page1R_mcid36" class="markedContent"><span id="page1R_mcid38" class="markedContent"><span dir="ltr" role="presentation">5. Salzkammergut Trophy E-Strecke</span></span></span></span><span id="page1R_mcid39" class="markedContent"><span id="page1R_mcid43" class="markedContent"><span id="page1R_mcid45" class="markedContent"><span dir="ltr" role="presentation"><br /></span></span></span></span></li>
+                <li><span id="page1R_mcid46" class="markedContent"><span id="page1R_mcid47" class="markedContent"><span id="page1R_mcid49" class="markedContent"><span dir="ltr" role="presentation">8. Ortler Bike Marathon Langdistanz</span></span></span></span></li>
+                <li><span id="page1R_mcid46" class="markedContent"><span id="page1R_mcid50" class="markedContent"><span id="page1R_mcid52" class="markedContent"><span dir="ltr" role="presentation">12. Bikefestival Ronda Grande</span></span></span></span></li>
+                </ul>
+                <p><strong>Ziele 2023:</strong></p>
+                <span dir="ltr" role="presentation">Gut in die Saison kommen, viel Spass mit dem Team haben und gute Ergebnisse einfahren</span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Stier Ende -->
+
+
+        <!-- MODAL Maegdefessel -->
+        <div class="modal fade" id="modalMaegdefessel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Sven M&auml;gdefessel</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/maegdefessel.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/themountainmemer/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/people/Sven-M%C3%A4gdefessel/pfbid02tVtmkHdvcELW7swhTyYhH9rGeLyg9KUwUTRxDeu4B4DaCRw8igeGP1oKrqDycb2Al/" target="_blank" class="link">
+                  <img src="img/fb.webp" alt="Facebook Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Facebook</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>30, Doktorand<strong><br /></strong></p>
+                <p><strong>Wohnort: </strong>Freiburg</p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li>2 x Sieg MTB Marathon Güntersleben, Overall</li>
+                <li>2. Bike Marathon Güntersleben Langdistanz, Overall</li>
+                <li>2. Bike Marathon Güntersleben Langdistanz, Overall</li>
+                <li>9. UCI Marathon La Forestiere, Overall</li>
+                <li>85. und 93. Platz Marathon Weltmeisterschaften</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022):</strong></p>
+                <ul>
+                <li>1. Platz Bike-Trophy Pleinfeld</li>
+                <li>5. Platz Bikemarathon Obermarchtal</li>
+                <li>2. Bike Marathon Güntersleben Langdistanz</li>
+                <li>6. Platz Black Forest Ultra Bike Marathon</li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">Podestplatzierungen und Siege bei MTB Festivals, Marathonrennen und Ritchey Challenge.<strong><br /></strong></span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Maegdefessel Ende -->
+
+
+        <!-- MODAL Acs -->
+        <div class="modal fade" id="modalAcs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Igor Acs</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/acs.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/igor_acs_/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>Unternehmensberater und Kinesiologie Student<strong><br /></strong></p>
+                <p><strong>Wohnort:</strong> Sisak/Kroatien</p>
+                <p><strong>Karriere Highlights:</strong></p>
+                <ul>
+                <li>3. Kroatiencup Marathon, 2022, Overall</li>
+                <li>5. Kroatische Meisterschaft Marathon, 2021, Elite</li>
+                <li>Top 10 Adria Bike Marathon Serie, 2019, Overall</li>
+                <li>26. 4-Islands Etappenrennen Kroatien, 2022, Overall</li>
+                </ul>
+                <p><strong>Erfolge Overall (2022): </strong></p>
+                <ul>
+                <li>3. Crikvebica Marathon, Kroatiencup</li>
+                <li>7. Adria Bike, Island Hero Quer Queen Stage Marathon</li>
+                <li>11. Adria Bike, Helter Skelter Marathon<strong><br /></strong></li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">Rennen fahren und gut im Team &#8222;WILIER-CHAOYANG&#8220; ankommen, Rennen gewinnen<strong><br /></strong></span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Acs Ende -->
+
+
+        <!-- MODAL Weismantel -->
+        <div class="modal fade" id="modalWeismantel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tim Weismantel</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/weismantel.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/tim_weismantel/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/radl.weismo/" target="_blank" class="link">
+                  <img src="img/fb.webp" alt="Facebook Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Facebook</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong><span dir="ltr" role="presentation">31, IT</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Systemelektroniker und Student</span><strong><br /></strong></p>
+                <p><strong>Wohnort: </strong><span dir="ltr" role="presentation">Gräfelfing</span></p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li><span dir="ltr" role="presentation">WM</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Teilnahme XCM Auronzo di Cadore (ITA, </span><span dir="ltr" role="presentation">2018)</span></li>
+                <li><span dir="ltr" role="presentation">1. Platz Gesamtwertung Ritchey</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Challenge </span><span dir="ltr" role="presentation">2018</span></li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022):</strong></p>
+                <ul>
+                <li><span dir="ltr" role="presentation">2. Platz Gesamtwertung Mountainbike</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Challenge</span></li>
+                <li><span dir="ltr" role="presentation">3. Platz Bayer</span><span dir="ltr" role="presentation">ische Meisterschaft X</span><span dir="ltr" role="presentation">C</span><span dir="ltr" role="presentation">M (Elite) </span><span dir="ltr" role="presentation">Trieb</span></li>
+                <li><span dir="ltr" role="presentation">6. Platz Salzkammergut Trophy (St</span><span dir="ltr" role="presentation">recke C)</span></li>
+                <li><span dir="ltr" role="presentation">7. Platz Angerberg (Str</span><span dir="ltr" role="presentation">ecke A)</span></li>
+                <li><span dir="ltr" role="presentation">8. Platz Montafon M2</span></li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <ul>
+                <li><span dir="ltr" role="presentation">I</span><span dir="ltr" role="presentation">m </span><span dir="ltr" role="presentation">Team &#8222;WILIER-CHAOYANG&#8220; an</span><span dir="ltr" role="presentation">kommen und viele </span><span dir="ltr" role="presentation">gemeinsame Erfolge mit dem </span><br role="presentation" /><span dir="ltr" role="presentation">Team.</span></li>
+                <li><span dir="ltr" role="presentation">Ge</span><span dir="ltr" role="presentation">s</span><span dir="ltr" role="presentation">amts</span><span dir="ltr" role="presentation">ie</span><span dir="ltr" role="presentation">g der Mo</span><span dir="ltr" role="presentation">untainbike</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Challenge (ehemalige Ritchey</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Challenge)</span></li>
+                <li><span dir="ltr" role="presentation">Sieg Bayerische Meisterschaft XCM</span></li>
+                <li><span dir="ltr" role="presentation">Siege lokalen </span><span dir="ltr" role="presentation">M</span><span dir="ltr" role="presentation">TB</span><span dir="ltr" role="presentation">&#8211;</span><span dir="ltr" role="presentation">Renn</span><span dir="ltr" role="presentation">en</span></li>
+                </ul>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Weismantel Ende -->
+
+
+        <!-- MODAL Metschberger -->
+        <div class="modal fade" id="modalMetschberger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Markus Metschberger</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/metschberger.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/markus__metschberger/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>39, Ingenieur</p>
+                <p><strong>Wohnort: </strong>Aiglsbach</p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li>Deutscher Hochschulmeister MTB (Overall)</li>
+                <li>MTB Bundesliga Deutschland,mehrfach Top 15</li>
+                <li>MTB Bundesliga Österreich,mehrfach Top 15</li>
+                <li>Top 20 Straßenbundesliga</li>
+                </ul>
+                <p><strong>Top Erfolge (2022):</strong></p>
+                <ul>
+                <li>3. Platz Kronplatzprince, Masters</li>
+                <li>4. Platz Mytos Dolomiti, Masters</li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">Wieder vorne mitfahren und für das Team <span dir="ltr" role="presentation">&#8222;WILIER-CHAOYANG&#8220;</span> Ergebnisse einfahren. Wieder an die Leistung der letzten Jahre anknüpfen.</span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Metschberger Ende -->
+
+
+        <!-- MODAL Pechacek -->
+        <div class="modal fade" id="modalPechacek" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Luca Pechacek</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/pechacek.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/lucapechacek/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/luca.pechacek/" target="_blank" class="link">
+                  <img src="img/fb.webp" alt="Facebook Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Facebook</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>19, Student</p>
+                <p><strong>Wohnort: </strong>Schlierbach</p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li>1. Schwarzwald-Bike-Marathon Jugend Cup</li>
+                <li>1. Kemptener Bike-Marathon Kurzstrecke Junioren</li>
+                <li>1. VulkanBike Eifel-Halbmarathon U19</li>
+                <li>3. Dolomiti Super Bike kurze Distanz</li>
+                <li>3. Overall Black Forest Ultra Bike-Marathon Short Track</li>
+                <li>4. Kronplatzking (prince) Marathon overall (1. U23)</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022):</strong></p>
+                <ul>
+                <li>1. Bike Festival Willingen Short Distance</li>
+                <li>1. Geba Kamm Ride</li>
+                <li>1. Iron Bike Race Einsiedeln 50km Lizenz</li>
+                <li>2. Deutsche Hochschulmeisterschaft MTB Marathon</li>
+                <li>2. Rennsteigride Schmiedefeld Marathon Strecke</li>
+                <li>9. Bike the Rock Heubach UCI C2</li>
+                </ul>
+                <p><strong>Ziele 2022: </strong></p>
+                <span dir="ltr" role="presentation">An die erfolgreiche Saison 2022 anknüpfen, die Fahrtechnik weiter verbessern und Spass im Team haben.<strong><br /></strong></p>
+                <p><strong>Homepage/FB/Instagram Link:</strong></span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Pechacek Ende -->
+
+
+        <!-- MODAL Schroedl -->
+        <div class="modal fade" id="modalSchroedl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Andreas Schr&ouml;dl</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/schroedl.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.facebook.com/andi.schrodlmtb/" target="_blank" class="link">
+                  <img src="img/fb.webp" alt="Facebook Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Facebook</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>36, Immobilien Kaufmann (Univ.)</p>
+                <p><strong>Wohnort: </strong>Amberg / Weiden i d Opf.<strong><br /></strong></p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li>6. Platz gesamt Ultra Black Forest Kirchzarten</li>
+                <li>1. Ritchey Challenge Achensee</li>
+                <li>1. Ritchey Challenge Angerberg/Wörgl</li>
+                <li>5. Platz gesamt Erzgebirgs Bikemarathon</li>
+                <li>4. Platz gesamt BikeFestival Leogang</li>
+                <li>2. Platz Ritchey Challenge Thurmansbang</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022):</strong></p>
+                <ul>
+                <li>1. Platz Eibenstock Marathon Short Distanz</li>
+                <li>1. Platz Herrieden</li>
+                <li>1. Platz Neustadt Marathon Short Distanz</li>
+                <li>2. Platz Cube-Cup Stammbach</li>
+                <li>3. Platz Rennsteigride Short Distanz</li>
+                <li>4. Platz Cube-Cup Asch</li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">XC-Rennen fahren und gewinnen</span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Schroedl Ende -->
+
+
+        <!-- MODAL Spahn -->
+        <div class="modal fade" id="modalSpahn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Hannes Spahn</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/spahn.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/spahnhannes/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>25, Heilerziehungspfleger</p>
+                <p><strong>Wohnort: </strong>Hausen bei Schonungen</p>
+                <p><strong>Karriere Highlights: </strong></p>
+                <ul>
+                <li>1. Xterra Europameisterschaft AK 25</li>
+                <li>1. Xterra Europameisterschaft AK 20</li>
+                <li>1. Bike Festival Gardasee Kurzdistanz, Overall</li>
+                <li>1. Ortlerbike Marathon Classic, Overall</li>
+                <li>4. Deutsche Meisterschaft Crossduathlon, Overall</li>
+                <li>4. Deutsche Meisterschaft Crosstriathlon, Overall</li>
+                <li>4. Salzkammergut Trophy 37km</li>
+                <li>5. Bikefestival Willingen Kurzdistanz</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022): </strong></p>
+                <ul>
+                <li>1. Ortlerbike Marathon Classic</li>
+                <li>2. Keiler Bike Marathon Kurzdistanz</li>
+                <li>3. Bayerische Meisterschaft Duathlon</li>
+                <li>4. Deutsche Meisterschaft Crossduathlon, Overall</li>
+                <li>4. Deutsche Meisterschaft Crosstriathlon, Overall</li>
+                <li>6. Bikefestival Willingen Kurzdistanz</li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">Top 10 Platzierungen Bike Marathon und Bike Festivals, Xterra Weltmeisterschaften Top 3 Agegroup <b><br /></b></span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Spahn Ende -->
+
+
+        <!-- MODAL Riedl -->
+        <div class="modal fade" id="modalRiedl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tobias Riedl</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/riedl.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.instagram.com/rietorides/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>37, Spezialist für Luftfahrtkomponenten</p>
+                <p><strong>Wohnort: </strong>Neuburg an der Donau</p>
+                <p><strong>Karriere Highlights:   </strong></p>
+                <ul>
+                <li>10. Marathon Europameisterschaft Senioren 1</li>
+                <li>Top Ten Platzierungen Cross DM</li>
+                <li>Podiumsplatzierungen bayerische Meisterschaften Cross und Strasse</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022): </strong></p>
+                <ul>
+                <li>1. Angerberg Shortdistance</li>
+                <li>2. Vehringendorf Shortdistance</li>
+                <li>6. Albstadt Bikemarathon Shortdistance</li>
+                <li>10. Kitzalpbike Shortdistance</li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">Gesund bleiben um weiterhin gute Ergebnisse einfahren zu können. Schöne Rides mit den Teamkollegen.<strong><br /></strong></span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Riedl Ende -->
+
+
+        <!-- MODAL Fehr -->
+        <div class="modal fade" id="modalFehr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Max Fehr</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/fehr.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://instagram.com/mxfhr_on_bike/" target="_blank" class="link">
+                  <img src="img/insta.webp" alt="Instagram Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;"> Instagram</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf: </strong>27, SAP Senior Analyst<strong><br /></strong></p>
+                <p><strong>Wohnort: </strong>Würzburg</p>
+                <div><strong>Karriere Highlights: </strong></div>
+                <ul>
+                <li>1. Keiler Bike Marathon Wombach, Kurzdistanz</li>
+                <li>1. Maintal Bike Marathon Kurzdistanz</li>
+                <li>5. Montafon M3 Kurzdistanz</li>
+                <li>10. Bikefestival Gardasee Ronda Piccola</li>
+                <li>22. UCI Mitas 4 Island Stage Race 270km Man</li>
+                <li>31. Deutsche Meisterschaft XCO</li>
+                </ul>
+                <p><strong>Top Erfolge Overall (2022): </strong></p>
+                <ul>
+                <li>3. Frankencup Rappershausen</li>
+                <li>6. Bayernliga Waldaschaff</li>
+                <li>7. Ortler Marathon Classic</li>
+                <li>8. Salzkammergut Trophy F</li>
+                <li>8. Maintal Marathon Kurzdistanz</li>
+                </ul>
+                <p><strong>Ziele 2023: </strong></p>
+                <span dir="ltr" role="presentation">An die guten Ergebnisse der letzten Saison anknüpfen und weiter verbessern. Eine gute Zeit mit dem Teamkameraden haben.</span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Fehr Ende -->
+
+
+        <!-- MODAL Ullmann -->
+        <div class="modal fade" id="modalUllmann" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tobias Ullmann</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/ullmann.webp" alt="" class="img-fluid rounded"><br><br>
+                <a href="https://www.facebook.com/tobias.ullmann.1" target="_blank" class="link">
+                  <img src="img/fb.webp" alt="Facebook Icon" width="30" height="30">
+                  <span style="text-decoration:none; color:inherit;">Facebook</span>
+                </a>
+                <br><br>
+                <p><strong>Alter, Beruf:</strong> 43, Inhaber der Fahrrad-Werkstatt Hilpoltstein und TU-Sports, Teamchef des Teams WILIER-CHAOYANG</p>
+                <p><strong>Wohnort:</strong> Kronmühle</p>
+                <p><strong>Erfolge: </strong></p>
+                <span dir="ltr" role="presentation">Teilnahme an den meisten europäischen UCI-Mountainbike Crosscountry Weltcuprennen , Teilnahme an UEC-Europacuprennen, mehrere Jahre UCI-Weltranglistenpunkte, Teilnahme an Deutschlandcup Cross, Deutsche Meisterschaft Cross und Bundesliga/Deutsche Meisterschaft Mountainbike, Zahlreiche Siege bei Mountainbike Wettbewerben und Festivals. 2021/2022 Siege und Podestplatzierungen bei zahlreichen Marathon-Klassikern in der Masterskategorie.</span></p>
+                <p>Mehre Jahre Mitglied vom UCI Tradeteams.</p>
+                <p><strong>Persönliche Zielsetzung: </strong></p>
+                <span dir="ltr" role="presentation">Den Mountainbikerennsport fördern, den Rennfahrern ein professionelles Umfeld geben und junge Talente an den Wettkampfbetrieb heranführen. Selbst auch Spass am Biken haben und ein paar gute Rennen fahren.</span></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Ullmann Ende -->
+
+
+        <!-- MODAL Felleiter -->
+        <div class="modal fade" id="modalFelleiter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Wolfgang Felleiter</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/felleiter.webp" alt="" class="img-fluid rounded"><br><br>
+                <p><strong>Alter, Beruf: </strong>53, Werkstattleiter Bikeshop<strong><br /></strong></p>
+                <p><strong>Wohnort: </strong>Eckersmühlen<strong><br /></strong></p>
+                <p><strong>Zielsetzung: </strong>Das Team mit Freude und erfolgreich unterstützen<strong><br /></strong></p>
+                <p><strong>Hobbys: </strong>Radfahren<strong><br /></strong></p>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Felleiter Ende -->
+
+
+        <!-- MODAL Koenig -->
+        <div class="modal fade" id="modalKoenig" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Herbert K&ouml;nig</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/koenig.webp" alt="" class="img-fluid rounded"><br><br>
+                <p><strong>Alter, Beruf:</strong> 61, Dipl.-Ing (FH)<strong><br /></strong></p>
+                <p><strong>Wohnort: </strong>Eckersmühlen</p>
+                <p><strong>Zielsetzung: </strong>Das Team und den Shop bestmöglich unterstützen und Spass dabei haben.</p>
+                <p><strong>Hobbys:</strong></p>
+                <ul>
+                <li>Radfahren und alles rund ums Fahrrad</li>
+                <li>Arbeiten mit Holz</li>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Koenig Ende -->
+
+
+        <!-- MODAL Spiegel -->
+        <div class="modal fade" id="modalSpiegel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Walter Spiegel</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" data-bs-touch="true" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/spiegel.webp" alt="" class="img-fluid rounded"><br><br>
+                <p><strong>Alter, Beruf: </strong>48, Vertriebsingenieur<strong><br /></strong></p>
+                <p><strong>Wohnort:</strong> Weissenburg</p>
+                <p><strong>Zielsetzung: </strong>Mit Spass zum Erfolg<strong><br /></strong></p>
+                <p><strong>Hobbys:</strong></p>
+                <ul>
+                <li>MTBiken</li>
+                <li>Skifahren</li>
+                <li>Skitouren gehen</li>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Zur&uuml;ck</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL Spiegel Ende -->
       
       </div>
     </div>
@@ -584,7 +1238,7 @@
 
   <div class="container my-5" id="contact">
     <div class="row">
-      <div class="col-md-6 col-12 mt-4 align-self-end">
+      <div class="col-md-6 col-6 mt-4 align-self-end">
         <h3 class="fw-bold">Kontakt</h3>
         <p class="fw-bold mt-4">Tobias Ullmann
           <br>
@@ -632,6 +1286,6 @@
 
   <script src="js/bootstrap.bundle.min.js"></script>
  
-</body>
+</main>
 
 </html>
