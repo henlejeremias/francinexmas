@@ -6,25 +6,54 @@
     <title>Wittmanns Image</title>
     <style>
         html, body {
-            height: 100%; /* Ensure full viewport height */
+            height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Prevent scrolling */
+            overflow: hidden;
         }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: black; /* Background color */
+            background-color: black;
         }
         img {
-            min-height: 100%; /* Image will always fill the screen height */
-            width: auto;    /* Width will adjust automatically to maintain aspect ratio */
-            object-fit: cover; /* Ensures the image covers the area, potentially cropping the sides */
+            min-height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+        .text-box {
+            position: absolute; /* Position the text box independently */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the text box */
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-family: 'Arial', sans-serif; /* Choose a font you like */
+            z-index: 10; /* Ensure text box is above the image */
+        }
+        .text-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .text-box p {
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <img src="img/wittmanns.jpg" alt="Wittmanns Restaurant">
+
+    <div class="text-box">
+        <h1>Einladung zum Steak-Essen</h1>
+        <p>Liebe Franziska,</p>
+        <p>Ich möchte Dich herzlich zu einem Steak-Essen im Restaurant Wittmann's einladen!</p>
+        <p>Freue mich auf einen schönen Abend mit Dir!</p>
+    </div>
 </body>
 </html>
