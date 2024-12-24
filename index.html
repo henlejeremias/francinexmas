@@ -2,47 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dinner Gift Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Wittmanns Image</title>
     <style>
+        html, body {
+            height: 100%; /* Ensure full viewport height */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling */
+        }
         body {
-            background-color: #f8f9fa; /* Light background */
-            font-family: 'Arial', sans-serif; /* Choose a font you like */
-            color: #343a40; /* Darker text color */
-            text-align: center; /* Center align everything */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black; /* Background color in case image doesn't cover fully */
         }
-        .gift-card {
-            max-width: 600px; /* Adjust width as needed */
-            margin: 50px auto;
-            padding: 30px;
-            border: 2px solid #ffc107; /* Example border color, adjust as you like */
-            border-radius: 10px;
-            background-color: #fff; /* White card background */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #ffc107; /* Example heading color */
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Maintain aspect ratio, fit within viewport */
         }
     </style>
 </head>
 <body>
-
-    <div class="gift-card">
-        <h1>Dinner Gift Card</h1>
-        <p>Dear [Spouse's Name],</p>
-        <p>Enjoy a wonderful dinner at [Restaurant Name]!</p>
-        <p>This gift card entitles you to a delightful dining experience.</p>
-        <p>Love,</p>
-        <p>[Your Name]</p>
-        <h2>Value: [Amount]</h2>
-        </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <img src="img/wittmanns.jpeg" alt="Wittmanns Restaurant">
 </body>
 </html>
