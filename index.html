@@ -15,16 +15,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: black; /* Background color in case image doesn't cover fully */
+            background-color: black; /* Background color */
         }
         img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain; /* Maintain aspect ratio, fit within viewport */
+            min-height: 100%; /* Image will always fill the screen height */
+            width: auto;    /* Width will adjust automatically to maintain aspect ratio */
+            object-fit: cover; /* Ensures the image covers the area, potentially cropping the sides */
         }
     </style>
 </head>
 <body>
-    <img src="img/wittmanns.jpg" alt="Wittmanns Restaurant">
+    <img src="img/wittmanns.jpeg" alt="Wittmanns Restaurant">
 </body>
 </html>
